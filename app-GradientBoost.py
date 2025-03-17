@@ -27,7 +27,7 @@ left_column.write("")
 dirs = os.getcwd()
 
 # 在右侧列中显示图像
-right_column.image(dirs + '\\logo.png', caption='', width=100)
+right_column.image('./logo.png', caption='', width=100)
 
 # with open("F:\\model\\jssrm\logo2.png", "rb") as f:
 #    local_image = f.read()
@@ -45,7 +45,7 @@ d = st.sidebar.number_input('ALB', min_value=0.0, max_value=1500.0, value=44.0)
 e = st.sidebar.number_input('abdominal pain', min_value=0, max_value=1, value=0)
 
 # Unpickle classifier
-mm = joblib.load('E:\\Py\\JSSRM\\GradientBoost.pkl')
+mm = joblib.load('./GradientBoost.pkl')
 
 # If button is pressed
 if st.sidebar.button("Submit"):
