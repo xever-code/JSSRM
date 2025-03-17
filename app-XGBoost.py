@@ -14,7 +14,7 @@ if 'data' not in st.session_state:
         columns=['GGT', 'HDL', 'TP', 'ALB', 'abdominal pain','Prediction','Label'])
 
 # 在主页面上显示数据
-st.header('胆囊癌早期诊断模型--app-XGBoost')
+st.header('胆囊癌早期诊断模型--XGBoost')
 
 # st.markdown("### 本地图片示例")
 # 创建两列布局
